@@ -1,0 +1,29 @@
+{
+  "name": "bedrock-llm-connector",
+  "version": "1.0.0",
+  "description": "Production-ready Amazon Bedrock LLM connector with bearer token support",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "example": "node examples/basic-usage.js",
+    "test": "node examples/test-connection.js"
+  },
+  "keywords": ["llm", "ai", "bedrock", "claude", "aws", "bearer-token", "http", "connector"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/bedrock-llm-connector.git"
+  }
+}

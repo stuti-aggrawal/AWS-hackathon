@@ -1,0 +1,33 @@
+{
+  "class_name": "ViewWidget",
+  "purpose": "This class extends the TableWidget class and is responsible for displaying information about a selected custom field.",
+  "database_operations": [
+    {
+      "table": "CustomFields",
+      "operations": [
+        "read"
+      ],
+      "fields": []
+    }
+  ],
+  "form_fields": [],
+  "business_logic": [
+    {
+      "function": "loadData",
+      "description": "Loads the custom field data from the database based on the organization ID and custom field ID.",
+      "validation_rules": []
+    }
+  ],
+  "ui_components": [
+    {
+      "type": "TableWidget",
+      "properties": {
+        "title": "Selected Custom Field Info"
+      },
+      "interactions": []
+    }
+  ],
+  "dependencies": [
+    "ui/widget/base/TableWidget.php"
+  ]
+}

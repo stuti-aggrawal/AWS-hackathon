@@ -1,0 +1,45 @@
+{
+  "class_name": "AddWidget",
+  "purpose": "This class extends the FormWidget class and is responsible for adding a new custom field data.",
+  "database_operations": [
+    {
+      "table": "CustomFields",
+      "operations": [
+        "create"
+      ],
+      "fields": []
+    }
+  ],
+  "form_fields": [
+    {
+      "name": "f_is_disabled",
+      "type": "checkbox",
+      "validation": "",
+      "required": false
+    },
+    {
+      "name": "f_is_compulsory",
+      "type": "checkbox",
+      "validation": "",
+      "required": false
+    },
+    {
+      "name": "f_is_updatable",
+      "type": "checkbox",
+      "validation": "",
+      "required": false
+    }
+  ],
+  "business_logic": [
+    {
+      "function": "processSubmit",
+      "description": "This function processes the form submission and creates a new custom field data.",
+      "validation_rules": []
+    }
+  ],
+  "ui_components": [],
+  "dependencies": [
+    "ui/widget/base/FormWidget.php",
+    "CustomFields"
+  ]
+}
